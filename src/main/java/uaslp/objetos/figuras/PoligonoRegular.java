@@ -2,10 +2,14 @@ package uaslp.objetos.figuras;
 
 import static java.lang.Math.sqrt;
 
-public class PoligonoRegular {
+public class PoligonoRegular extends Figura implements DrawableItem{
     private int numeroDeLados;
     private double lado;
     private double area;
+
+    public void draw() {
+
+    }
 
     public PoligonoRegular(int numeroDeLados, double lado){
         this.numeroDeLados=numeroDeLados;
@@ -27,4 +31,8 @@ public class PoligonoRegular {
         area=(3*sqrt(3))*(lado*lado)/2;
         return area;
     }
+    public String getName() {
+        return "Poligono Regular";
+    }
+
 }
