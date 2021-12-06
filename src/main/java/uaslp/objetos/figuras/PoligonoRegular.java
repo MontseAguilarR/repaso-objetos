@@ -11,15 +11,26 @@ public class PoligonoRegular extends Figura implements DrawableItem{
 
     }
 
+    public int getNumeroDeLados() throws NumeroInvalidoDeLados{
+
+            if(numeroDeLados<5)
+            {
+                throw new NumeroInvalidoDeLados("Número de lados válido a partir de 5");
+            }
+        return numeroDeLados;
+    }
+
     public PoligonoRegular(int numeroDeLados, double lado){
         this.numeroDeLados=numeroDeLados;
         this.lado=lado;
     }
     public PoligonoRegular(int numeroDeLados){
+
        this.numeroDeLados=numeroDeLados;
     }
 
     public double getLado() {
+
         return lado;
     }
 

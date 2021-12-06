@@ -13,7 +13,7 @@ public class Exercise3 {
     // NO DEBES MODIFICAR PARA NADA ESTA CLASE
 
     @Test
-    public void testCuadrado() {
+    public void testCuadrado (){
         // Given:
         Cuadrado cuadrado = new Cuadrado();
 
